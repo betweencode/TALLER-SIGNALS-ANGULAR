@@ -1,0 +1,31 @@
+<header>
+  <h1>Contadores multiples and operador update</h1>
+</header>
+
+
+<div>
+  contador: {{contador1()}}
+</div>
+<div>
+  contador2: {{contador2()}}
+</div>
+<div>
+  contador 3: {{contador3()}}
+</div>
+<div>
+  contador 4: {{contador4()}}
+</div>
+
+<div>
+  contador 5 con OPERATOR UPDATE: {{contador5()}}
+</div>
+
+
+
+<hr>
+<app-mycart2 [titulo]="'Contador uno en uno'" [subtitulo]="'en uno en uno'" [mysignal]="contador1"  [dimeencuanto]="1"></app-mycart2>
+<app-mycart2 [titulo]="'Contador dos en dos'" [subtitulo]="'en dos en dos'" [mysignal]="contador2" [dimeencuanto]="2"></app-mycart2>
+<app-mycart2 [titulo]="'Contador tres en tres'" [subtitulo]="'en tres en tres'" [mysignal]="contador3" [dimeencuanto]="3"></app-mycart2>
+<app-mycart2 [titulo]="'Contador cuatro en cuatro'" [subtitulo]="'cuatro en cuatro'" [mysignal]="contador4" [dimeencuanto]="4"></app-mycart2>
+<app-mycart2 [titulo]="'Contador cinco en cinco en cuatro'" [subtitulo]="'cinco en cinco'" [mysignal]="contador5" [dimeencuanto]="5" [consignalupdate]="true"></app-mycart2>
+<hr>

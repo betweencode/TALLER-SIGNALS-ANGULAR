@@ -1,0 +1,39 @@
+<header>
+  <h1>Episodio 1 de signal</h1>
+</header>
+
+<div>
+  contador: {{contador}}
+</div>
+
+<div>
+  contador con senial: {{senial()}}
+</div>
+
+<button (click)="darClick()">incrementar</button>
+
+<button (click)="darClicksenial()">incrementar con senial</button>
+
+
+<br>
+
+<hr>
+
+<header>
+  <h1>Taller de signal</h1>
+</header>
+
+
+<div>
+  contador cartas con signal: {{senialmicart()}}
+</div>
+
+<div>
+  contador cartas normal sin SINGNAL: {{contadornormal}}
+</div>
+
+
+<div>
+  <app-micart [titulo]="'En uno en uno'" [misignal]="senialmicart" [contadornormal]="contadornormal" (salida)="eventoincrementador($event)"></app-micart>
+</div>
+
