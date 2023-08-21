@@ -7,6 +7,7 @@ import { MicartComponent } from './pages/episodio1incrementablessignal/micart/mi
 import { Episodio1incrementablessignalComponent } from './pages/episodio1incrementablessignal/episodio1incrementablessignal.component';
 import { Mycart2Component } from './pages/episodio2incrementablesmultiples/mycart2/mycart2.component';
 import { Episodio2incrementablesmultiplesComponent } from './pages/episodio2incrementablesmultiples/episodio2incrementablesmultiples.component';
+import { ConmutateComponent } from './pages/episodio3incrementablemutate/conmutate/conmutate.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { Episodio2incrementablesmultiplesComponent } from './pages/episodio2incr
       MicartComponent,
       Episodio1incrementablessignalComponent,
       Mycart2Component,
-      Episodio2incrementablesmultiplesComponent
+      Episodio2incrementablesmultiplesComponent,
+      ConmutateComponent
    ],
   imports: [
     BrowserModule,
