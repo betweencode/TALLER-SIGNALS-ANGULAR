@@ -8,6 +8,10 @@ import { Episodio1incrementablessignalComponent } from './pages/episodio1increme
 import { Mycart2Component } from './pages/episodio2incrementablesmultiples/mycart2/mycart2.component';
 import { Episodio2incrementablesmultiplesComponent } from './pages/episodio2incrementablesmultiples/episodio2incrementablesmultiples.component';
 import { ConmutateComponent } from './pages/episodio3incrementablemutate/conmutate/conmutate.component';
+import { Episodio4listaalumnosComponent } from './pages/episodio4listaalumnos/episodio4listaalumnos.component';
+import { ListadomateriasComponent } from './pages/episodio4listaalumnos/detalles4/listadomaterias/listadomaterias.component';
+import { ListadoalumnosComponent } from './pages/episodio4listaalumnos/detalles4/listadoalumnos/listadoalumnos.component';
+import { ResultadoComponent } from './pages/episodio4listaalumnos/detalles4/resultado/resultado.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { ConmutateComponent } from './pages/episodio3incrementablemutate/conmuta
       Episodio1incrementablessignalComponent,
       Mycart2Component,
       Episodio2incrementablesmultiplesComponent,
-      ConmutateComponent
+      ConmutateComponent,
+      Episodio4listaalumnosComponent,
+      ListadomateriasComponent,
+      ListadoalumnosComponent,
+      ResultadoComponent
    ],
   imports: [
     BrowserModule,
