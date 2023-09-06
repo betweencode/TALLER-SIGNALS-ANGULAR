@@ -12,6 +12,8 @@ import { Episodio4listaalumnosComponent } from './pages/episodio4listaalumnos/ep
 import { ListadomateriasComponent } from './pages/episodio4listaalumnos/detalles4/listadomaterias/listadomaterias.component';
 import { ListadoalumnosComponent } from './pages/episodio4listaalumnos/detalles4/listadoalumnos/listadoalumnos.component';
 import { ResultadoComponent } from './pages/episodio4listaalumnos/detalles4/resultado/resultado.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ResultadoComponent } from './pages/episodio4listaalumnos/detalles4/resu
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

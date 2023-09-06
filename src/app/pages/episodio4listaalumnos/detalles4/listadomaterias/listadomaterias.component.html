@@ -3,6 +3,8 @@
     <div class="form-group">
       <label for="exampleInputEmail1">Nombre materia</label>
       <input
+
+      [(ngModel)]="nombre"
         type="text"
         class="form-control"
         id="exampleInputEmail1"
@@ -12,7 +14,7 @@
     </div>
 
     <div class="col text-end">
-      <button class="btn btn-primary">Agregar</button>
+      <button (click)="agregar()" class="btn btn-primary">Agregar</button>
     </div>
   </div>
 </div>
@@ -24,11 +26,8 @@
     <h2>Materias</h2>
     <hr>
     <ul class="list-group">
-      <li class="list-group-item disabled">Santiago anotnio mariscal</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Morbi leo risus</li>
-      <li class="list-group-item">Porta ac consectetur ac</li>
-      <li class="list-group-item">Vestibulum at eros</li>
+      <li *ngFor="let item of arreglo" class="list-group-item disabled">{{item.nombremateria}}</li>
+
     </ul>
   </div>
 </div>

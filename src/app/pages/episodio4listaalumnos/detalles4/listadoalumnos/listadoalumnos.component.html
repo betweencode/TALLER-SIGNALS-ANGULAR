@@ -2,12 +2,12 @@
   <div class="col">
       <div class="form-group">
         <label for="exampleInputEmail1">Nombre</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresando alumno">
+        <input type="text" [(ngModel)]="nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresando alumno">
 
       </div>
 
   <div class="col text-end">
-    <button class="btn btn-primary">Agregar</button>
+    <button (click)="agregar()" class="btn btn-primary">Agregar</button>
   </div>
 </div>
 
@@ -17,13 +17,19 @@
 
     <h2>Alumnos</h2>
     <hr>
-    <ul class="list-group">
-      <li class="list-group-item disabled">Santiago anotnio mariscal</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Morbi leo risus</li>
-      <li class="list-group-item">Porta ac consectetur ac</li>
-      <li class="list-group-item">Vestibulum at eros</li>
+    <ul *ngIf="arreglo && arreglo.length > 0; else sindatos" class="list-group">
+      <li *ngFor="let item of arreglo" class="list-group-item disabled">{{item.nombre}}</li>
     </ul>
+
+
+    <ng-template #sindatos>
+      <div class="alert alert-warning" role="alert">
+        Sin datos de alumnos
+      </div>
+
+    </ng-template>
+
+
 
   </div>
 </div>

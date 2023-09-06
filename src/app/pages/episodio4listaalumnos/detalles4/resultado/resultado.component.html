@@ -9,11 +9,7 @@
     <div class="form-group">
       <label for="exampleFormControlSelect1">Alumnos</label>
       <select class="form-control" id="exampleFormControlSelect1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
+        <option *ngFor="let item of miarregloSignalalumno()" [value]="item.identificador">{{item.nombre}}</option>
       </select>
     </div>
   </div>
@@ -21,11 +17,7 @@
     <div class="form-group">
       <label for="exampleFormControlSelect1">Materias</label>
       <select class="form-control" id="exampleFormControlSelect1">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
+        <option *ngFor="let item of miarregloMateriasConeffect" [value]="item.identificador">{{item.nombremateria}}</option>
       </select>
     </div>
   </div>
@@ -55,13 +47,12 @@
             <td>
 
               <ul class="list-group">
-                <li class="list-group-item disabled">Santiago anotnio mariscal</li>
+                <li class="list-group-item disabled">Santiago anotnio mariscal <span class="badge badge-light">4</span></li>
                 <li class="list-group-item">Dapibus ac facilisis in</li>
                 <li class="list-group-item">Morbi leo risus</li>
                 <li class="list-group-item">Porta ac consectetur ac</li>
                 <li class="list-group-item">Vestibulum at eros</li>
               </ul>
-
             </td>
           </tr>
         </tbody>
