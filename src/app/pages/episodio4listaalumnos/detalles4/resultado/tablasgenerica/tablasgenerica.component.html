@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col">
+
+
+    <h2>Resultado de alumnos</h2>
+
+    <table *ngIf="arreglo.length > 0;else sindatos" class="table table-hover">
+      <thead>
+
+        <tr>
+          <th>Nombre</th>
+          <th>Materias</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of arreglo">
+          <td>{{item.nombre}}</td>
+          <td>
+
+            <ul class="list-group">
+              <li *ngFor="let material of item.materias"  class="list-group-item disabled">{{material.nombre}} <span class="badge badge-light">{{material.cantidad}}</span></li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <ng-template #sindatos>
+      <div class="alert alert-warning" role="alert">
+        Sin datos para mostrar
+      </div>
+
+    </ng-template>
+
+  </div>
+</div>

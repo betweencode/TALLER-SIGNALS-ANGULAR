@@ -20,6 +20,12 @@ export class ResultadoComponent implements OnInit {
 
   public miarregloMateriasConeffect:MATERIAS[] = [];
 
+
+
+
+  public alumno:number = 0;
+  public materia:number = 0;
+
   constructor() {
 
     effect(()=>{
@@ -30,6 +36,26 @@ export class ResultadoComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+
+  public agregandomateriasalumnos(){
+
+    const alumno:ALUMNOS = this.miarregloSignalalumno().find(s=>s.identificador == this.alumno) || {identificador:0,nombre:""};
+
+    const materia:MATERIAS = this.miarregloMateriasConeffect.find(s=>s.identificador == this.materia) || {identificador:0,nombremateria:""};
+
+    alumno.materias = [...(alumno.materias??[]),materia]
+
+
+    this.miarregloSignalalumno.mutate(s=>{
+      let indice = s.findIndex(m => m.identificador ==alumno.identificador);
+      s[indice] = alumno;
+    });
+
+
+
+
   }
 
 }

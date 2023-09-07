@@ -25,9 +25,17 @@
   <div class="col">
     <h2>Materias</h2>
     <hr>
-    <ul class="list-group">
+    <ul *ngIf="arreglo.length > 0;else sindatos" class="list-group">
       <li *ngFor="let item of arreglo" class="list-group-item disabled">{{item.nombremateria}}</li>
 
     </ul>
+
+    <ng-template #sindatos>
+      <div class="alert alert-warning" role="alert">
+        Sin datos de alumnos
+      </div>
+
+    </ng-template>
   </div>
 </div>
+

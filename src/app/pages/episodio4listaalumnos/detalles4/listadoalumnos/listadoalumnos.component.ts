@@ -1,4 +1,5 @@
 import { Component, OnInit, signal } from '@angular/core';
+import { MATERIAS } from '../listadomaterias/listadomaterias.component';
 
 
 export  var  misignal = signal<ALUMNOS[]>([]);
@@ -35,5 +36,6 @@ export class ListadoalumnosComponent implements OnInit {
 
 export interface ALUMNOS{
   nombre:string,
-  identificador:number
+  identificador:number,
+  materias?:MATERIAS[]|undefined
 }

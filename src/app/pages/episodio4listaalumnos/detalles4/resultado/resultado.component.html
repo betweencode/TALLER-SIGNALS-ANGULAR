@@ -8,7 +8,7 @@
   <div class="col-6">
     <div class="form-group">
       <label for="exampleFormControlSelect1">Alumnos</label>
-      <select class="form-control" id="exampleFormControlSelect1">
+      <select [(ngModel)]="alumno" class="form-control" id="exampleFormControlSelect1">
         <option *ngFor="let item of miarregloSignalalumno()" [value]="item.identificador">{{item.nombre}}</option>
       </select>
     </div>
@@ -16,48 +16,18 @@
   <div class="col-6">
     <div class="form-group">
       <label for="exampleFormControlSelect1">Materias</label>
-      <select class="form-control" id="exampleFormControlSelect1">
+      <select  [(ngModel)]="materia" class="form-control" id="exampleFormControlSelect1">
         <option *ngFor="let item of miarregloMateriasConeffect" [value]="item.identificador">{{item.nombremateria}}</option>
       </select>
     </div>
   </div>
 
   <div class="row">
-    <div class="col text-end"><button class="btn btn-light">Agregar</button></div>
+    <div class="col text-end"><button (click)="agregandomateriasalumnos()" class="btn btn-light">Agregar</button></div>
   </div>
 
 
-  <div class="row">
-    <div class="col">
 
+  <app-tablasgenerica></app-tablasgenerica>
 
-      <h2>Resultado de alumnos</h2>
-
-      <table class="table table-hover">
-        <thead>
-
-          <tr>
-            <th>Nombre</th>
-            <th>Materias</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Nombre</td>
-            <td>
-
-              <ul class="list-group">
-                <li class="list-group-item disabled">Santiago anotnio mariscal <span class="badge badge-light">4</span></li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Morbi leo risus</li>
-                <li class="list-group-item">Porta ac consectetur ac</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-    </div>
-  </div>
 </div>
