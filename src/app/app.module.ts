@@ -15,6 +15,7 @@ import { ResultadoComponent } from './pages/episodio4listaalumnos/detalles4/resu
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TablasgenericaComponent } from './pages/episodio4listaalumnos/detalles4/resultado/tablasgenerica/tablasgenerica.component';
+import { Episodio5effectComponent } from './pages/episodio5effect/episodio5effect.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TablasgenericaComponent } from './pages/episodio4listaalumnos/detalles4
       ListadomateriasComponent,
       ListadoalumnosComponent,
       ResultadoComponent,
-      TablasgenericaComponent
+      TablasgenericaComponent,
+      Episodio5effectComponent
    ],
   imports: [
     BrowserModule,
