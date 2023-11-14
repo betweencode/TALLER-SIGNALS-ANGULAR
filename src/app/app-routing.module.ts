@@ -5,6 +5,7 @@ import { Episodio1incrementablessignalComponent } from './pages/episodio1increme
 import { Episodio2incrementablesmultiplesComponent } from './pages/episodio2incrementablesmultiples/episodio2incrementablesmultiples.component';
 import { ConmutateComponent } from './pages/episodio3incrementablemutate/conmutate/conmutate.component';
 import { Episodio5effectComponent } from './pages/episodio5effect/episodio5effect.component';
+import { Episodio6advancetopicsComponent } from './pages/episodio6advancetopics/episodio6advancetopics.component';
 
 const routes: Routes = [
   {path:'episodio1',component:Episodio1incrementablessignalComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path:'episodio3',component:ConmutateComponent},
   {path:'episodio4',component:Episodio4listaalumnosComponent},
   {path:'episodio5',component:Episodio5effectComponent},
+  {path:'episodio6',component:Episodio6advancetopicsComponent}
 ];
 
 @NgModule({

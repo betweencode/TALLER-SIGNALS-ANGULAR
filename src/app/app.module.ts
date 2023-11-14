@@ -16,6 +16,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TablasgenericaComponent } from './pages/episodio4listaalumnos/detalles4/resultado/tablasgenerica/tablasgenerica.component';
 import { Episodio5effectComponent } from './pages/episodio5effect/episodio5effect.component';
+import { Episodio6advancetopicsComponent } from './pages/episodio6advancetopics/episodio6advancetopics.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { Episodio5effectComponent } from './pages/episodio5effect/episodio5effec
       ListadoalumnosComponent,
       ResultadoComponent,
       TablasgenericaComponent,
-      Episodio5effectComponent
+      Episodio5effectComponent,
+      Episodio6advancetopicsComponent
    ],
   imports: [
     BrowserModule,
